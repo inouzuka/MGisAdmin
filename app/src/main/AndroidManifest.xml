@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+android:sharedUserId="com.johanes" package="com.johanes.mgisadmin">
+
+<permission android:name="com.johanes.mgisadmin.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+<!--<uses-permission android:name=""-->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+<!-- <uses-permission android:name="android.permission." /> -->
+<application android:allowBackup="true" android:icon="@drawable/bc3" android:label="@string/app_name"
+    android:supportsRtl="true" android:theme="@style/AppTheme">
+    <activity android:name=".MSplash">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".menu.MainMenu" android:screenOrientation="portrait" />
+    <activity android:name=".menu.Login" android:screenOrientation="portrait" />
+    <activity android:name=".menu.Register" android:screenOrientation="portrait" />
+    <activity android:name=".menu.Info" android:screenOrientation="portrait" />
+    <activity android:name=".menu.ListGereja" android:screenOrientation="portrait" />
+    <activity android:name=".menu.InputGereja" android:screenOrientation="portrait" />
+    <activity android:name=".menu.DetailGereja" android:screenOrientation="portrait" />
+    <activity android:name=".menu.Maps" android:screenOrientation="portrait" />
+    <activity android:name=".menu.MapsActivity" android:screenOrientation="portrait" />
+
+    <activity android:name="com.johanes.mgisadmin.menu.MapsActivity2" android:label="@string/title_activity_maps2">
+
+    </activity>
+    <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+    <!--<meta-data-->
+    <!--android:name="com.google.android.geo.API_KEY"-->
+    <!--android:value="@string/google_maps_key" />-->
+
+    <!--<activity-->
+    <!--android:name=".menu.MapsActivity"-->
+    <!--android:label="@string/title_activity_maps"/>-->
+    <meta-data android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyCHYZZRQ-AlL_M7sJ6b3pudgr-01erpnK0" />
+</application>
+
+</manifest>

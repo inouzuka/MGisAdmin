@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100sp"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        android:id="@+id/uploadedImage"
+        tools:ignore="ContentDescription"
+        android:background="@color/Color_3"
+        android:layout_height="100sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/uploadedImage"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textViewNamaGereja"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:text="Nama Gereja" />
+
+    <TextView
+        android:text="Jarak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNamaGereja"
+        android:layout_alignStart="@+id/textViewNamaGereja"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textViewJarak"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="Alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewJarak"
+        android:layout_alignStart="@+id/textViewJarak"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textViewAlamatGereja"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+</RelativeLayout>
